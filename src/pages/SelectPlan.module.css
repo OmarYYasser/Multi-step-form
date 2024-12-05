@@ -1,0 +1,79 @@
+.contentGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.8rem;
+}
+@media (max-width: 767px) {
+  .contentGrid {
+    grid-template-columns: 1fr;
+  }
+}
+.contentGrid > div {
+  border-radius: 0.6rem;
+  border: 1px solid var(--light-gray);
+  padding: 1rem;
+  cursor: pointer;
+}
+@media (max-width: 767px) {
+  .contentGrid > div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  .contentGrid > div div * {
+    display: block;
+  }
+}
+.contentGrid > div b {
+  margin-top: 2.5rem;
+  display: block;
+}
+@media (max-width: 767px) {
+  .contentGrid > div b {
+    margin: 0;
+    display: inline;
+  }
+}
+.contentGrid > div.active {
+  border-radius: 6px;
+  border: 1px solid var(--cool-gray);
+}
+.duration {
+  margin: 25px auto 0;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.duration label {
+  margin: 0 10px;
+  cursor: pointer;
+}
+.duration label input {
+  width: 0;
+  height: 0;
+}
+.duration label span {
+  display: inline-block;
+  width: 40px;
+  height: 15px;
+  background-color: var(--marine-blue);
+  border-radius: 15px;
+  position: relative;
+}
+.duration label span::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 3.5px;
+  width: 8px;
+  height: 8px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+
+.duration label input:checked + span::before {
+  transform: translate(23.5px, -50%);
+}

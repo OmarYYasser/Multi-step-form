@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  color: var(--marine-blue);
+  background-color: #fff;
+  border-radius: 15px;
+  height: 88vh;
+  padding: 30px;
+  z-index: 1;
+  width: 900px;
+  max-width: 100%;
+}
+
+@media (max-width: 991px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    height: auto;
+    margin-top: 4rem;
+  }
+}

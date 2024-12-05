@@ -1,0 +1,41 @@
+.addons label {
+  display: flex;
+  border: 1px solid var(--light-gray);
+  border-radius: 8px;
+  padding: 1.3rem;
+  cursor: pointer;
+  transition: 0.3s;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .addons label {
+    padding: 0.7rem;
+  }
+  .addons label h3 {
+    font-size: 1.1rem;
+  }
+  .addons label p {
+    font-size: 0.8rem;
+  }
+}
+.addons label:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.addons label:hover {
+  border-color: var(--marine-blue);
+}
+
+.addons label.active {
+  border-color: var(--marine-blue);
+}
+
+.addons label input[type="checkbox"] {
+  width: 24px;
+  height: 24px;
+  margin-right: 20px;
+}
+.addons label span {
+  display: block;
+  margin-left: auto;
+}

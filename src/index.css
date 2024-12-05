@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --marine-blue: hsl(213, 96%, 18%);
+  --purplish-blue: hsl(243, 100%, 62%);
+  --pastel-blue: hsl(228, 100%, 84%);
+  --light-blue: hsl(206, 94%, 87%);
+  --strawberry: hsl(354, 84%, 57%);
+  --cool-gray: hsl(231, 11%, 63%);
+  --light-gray: hsl(229, 24%, 87%);
+  --magnolia: hsl(217, 100%, 97%);
+  --alabaster: hsl(231, 100%, 99%);
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  background-color: var(--light-blue);
+  margin: 0;
+  height: 100vh;
+}
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px;
+  height: 100%;
+}
+
+@media (max-width: 767px) {
+  #root {
+    display: block;
+  }
+  body {
+    height: auto;
+  }
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.cta:link,
+.cta:visited,
+.btn {
+  padding: 14px 25px;
+  text-decoration: none;
+  display: block;
+  width: fit-content;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+}
+
+@media (min-width: 768px) {
+  .nav {
+    margin-top: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .nav {
+    position: absolute;
+    padding: 15px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+}
+
+.next {
+  color: white;
+  background-color: var(--marine-blue);
+  border-radius: 6px;
+  margin-left: auto;
+}
+
+.prev {
+  color: var(--marine-blue);
+  font-weight: bold;
+}
+
+img {
+  max-width: 100%;
+}

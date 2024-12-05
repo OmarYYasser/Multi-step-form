@@ -1,0 +1,14 @@
+.form input,
+.form label {
+  display: block;
+}
+.form input {
+  width: 100%;
+  padding: 15px;
+  border-radius: 6px;
+  border: 1px solid var(--cool-gray);
+  outline: none;
+}
+.form label:not(:first-of-type) {
+  margin: 15px 0 7px;
+}

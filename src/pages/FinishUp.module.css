@@ -1,0 +1,26 @@
+.reset > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.reset > a:nth-child(2) {
+  color: var(--cool-gray);
+}
+
+.reset > div:nth-child(1) {
+  margin-bottom: 10px;
+}
+.reset hr {
+  margin: 1.5rem 0;
+}
+.reset > .total {
+  margin-top: 2.5rem;
+}
+.reset > div:nth-child(6) span:last-child {
+  color: var(--purplish-blue);
+  font-weight: bold;
+}
+.reset > div span:first-child {
+  color: var(--cool-gray);
+}
